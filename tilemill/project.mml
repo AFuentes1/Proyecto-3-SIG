@@ -1,0 +1,330 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "raster",
+      "extent": [
+        -84.00044434675,
+        9.079043627214286,
+        -83.43163691183334,
+        9.589825254785714
+      ],
+      "id": "hillshadepz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\raster\\hillshade_pz.tif"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "hillshadepz"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -84.00169998144723,
+        9.074812866215739,
+        -83.42941556014387,
+        9.598691458252688
+      ],
+      "id": "canton_perez_zeledon",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\procesados\\canton_perez_zeledon.shp",
+        "id": "canton_perez_zeledon",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "canton_perez_zeledon"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -84.00169998144723,
+        9.074812866215739,
+        -83.42941556014387,
+        9.598691458252688
+      ],
+      "id": "distritos_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\procesados\\distritos_pz.shp",
+        "id": "distritos_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "distritos_pz"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -83.7574727,
+        9.1589257,
+        -83.5490235,
+        9.4668593
+      ],
+      "id": "parques_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto3-SIG\\Proyecto-3-SIG\\procesados\\parques_OSM_pz.shp",
+        "id": "parques_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "parques_pz"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -83.99633103676743,
+        9.07586708358501,
+        -83.44731451338548,
+        9.573323869393422
+      ],
+      "id": "rios_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto3-SIG\\Proyecto-3-SIG\\procesados\\rios_pz.shp",
+        "id": "rios_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "rios_pz"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -83.85357268225233,
+        9.075199515206773,
+        -83.49075773828615,
+        9.594343819516771
+      ],
+      "id": "carreteras_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto3-SIG\\Proyecto-3-SIG\\procesados\\carreteras_pz.shp",
+        "id": "carreteras_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "carreteras_pz"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -84.00133559929782,
+        9.074812919704344,
+        -83.42984990330558,
+        9.59422763905295
+      ],
+      "id": "calles_osm_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto3-SIG\\Proyecto-3-SIG\\procesados\\calles_OSM_pz.shp",
+        "id": "calles_osm_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "calles_osm_pz"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -83.94335670297606,
+        9.076475242924838,
+        -83.48197891605413,
+        9.551129641172679
+      ],
+      "id": "poblados_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto3-SIG\\Proyecto-3-SIG\\procesados\\poblados_pz.shp",
+        "id": "poblados_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "poblados_pz"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -83.88661230578732,
+        9.221213226149493,
+        -83.52111217376265,
+        9.54071329170963
+      ],
+      "id": "escuelas_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\procesados\\escuelas_pz.shp",
+        "id": "escuelas_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "escuelas_pz"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -83.70200122330074,
+        9.373179967139393,
+        -83.70200122330074,
+        9.373179967139393
+      ],
+      "id": "hospitales_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\procesados\\hospitales_pz.shp",
+        "id": "hospitales_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hospitales_pz"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -83.70219154964732,
+        9.15980495082248,
+        -83.56988041676925,
+        9.421192889173124
+      ],
+      "id": "clinicas_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\procesados\\clinicas_pz.shp",
+        "id": "clinicas_pz",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "clinicas_pz"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -83.70747443041724,
+        9.160227512792291,
+        -83.5693829206807,
+        9.385023368300772
+      ],
+      "id": "gasolineras_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\procesados\\gasolineras_pz.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "gasolineras_pz"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -83.70523251837211,
+        9.214298096581087,
+        -83.50279444598328,
+        9.41296738617697
+      ],
+      "id": "hoteles_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\procesados\\hoteles_pz.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hoteles_pz"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -83.70816531030232,
+        9.371131897222208,
+        -83.70364194708,
+        9.375250522140007
+      ],
+      "id": "bancos_pz",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto-3-SIG-main\\procesados\\bancos_pz.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "bancos_pz"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -83.8428148,
+        9.19208,
+        -83.5054455,
+        9.5514149
+      ],
+      "id": "comercios_osm",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\masan\\OneDrive\\Escritorio\\Proyecto3-SIG\\Proyecto-3-SIG\\procesados\\comercios_OSM_pz.shp",
+        "id": "comercios_osm",
+        "project": "Mapa_Perez_Zeledon",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "comercios_osm"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Mapa_Perez_Zeledon",
+  "description": ""
+}
