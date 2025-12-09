@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mapa Pérez Zeledón</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        var map = L.map('map').setView([9.35, -83.7], 12);
+
+        L.tileLayer('../tiles/extracted/{z}/{x}/{y}.png', {
+            minZoom: 10,
+            maxZoom: 16,
+            attribution: 'Mapa generado por Anthony Fuentes y Matheu Cordero | Datos: Curso SIG & OpenStreetMap'
+        }).addTo(map);
+    </script>
+</body>
+
+</html>
