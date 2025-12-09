@@ -110,17 +110,58 @@ Con la capa `dem_cr`:
 
 ---
 
-## 7. Generación del mapa de sombras (Hillshade)
+## 7. Obtensión de las capas de OSM
 
-Con la capa `dem_cr`:
+Con la capa `canton_perez_zeledon`:
 
-1. Se utilizó **Ráster → Análisis del terreno → Mapa de Sombras (Hillshade)**.
-2. Parámetros principales:
-   - **Capa de entrada:** `dem_cr`
-   - **Factor Z:** `1.0`
-   - **Escala:** `1.0`
-   - **Azimut de la luz:** `315°`
-   - **Altitud de la luz:** `45°`
-   - Resto de parámetros por defecto.
-3. **Archivo de salida:** `Proyecto-3-SIG/raster/hillshade_cr.tif`
-4. Se cargó la capa **`hillshade_cr`**, que se está utilizando como fondo de relieve detrás del cantón Pérez Zeledón.
+1. Se utilizó **QGis → QuickOSM → QuickQuery**.
+2. Se crearon 3 querys:
+   - **parques**
+   - **comercios**
+   - **calles**
+3. **Recorte** Algunas capas salieron un poco fuera del limite del canton así que se usó clip de cada una de las capas con la capa `canton_perez_zeledon` para quedar dentro de los límites.
+4. Se descargaron las capas y se pusieron dentro de la carpeta `procesados`.
+
+---
+
+## 8. Creación del mapa en TileMill
+
+Con la aplicación `Tilemill`:
+
+1. Se creó el mapa **Mapa_Perez_Zeledon**.
+2. Se hizo uso de las capas que tenemos en la carpeta procesados.
+3. **Adición de íconos:** Se descargaron íconos svg gratis de páginas web y se utilizaron para poner diferentes íconos en las capas de tipo punto.
+4. Se descargó el mapa como .MBTiles.
+
+---
+
+## 9. Descarga de pngs desde MBTiles
+
+Utilizando `CMD`:
+
+1. Se corrió el script de python mbutil.
+2. Se hizo un dump de 22.000+ tiles como png.
+3. Se pusieron esos png en la carpeta tiles\extracted\
+
+---
+
+## 10. Creación de index.html
+
+1. Se hizo un archivo index.html.
+2. Se editó usando VS Code.
+3. Se probó para ver si mostraba todo el mapa.
+
+---
+
+## 11. Publicación de la web
+
+1. Se utilizó Netlify para hacer publicación de la web gratis.
+2. Se subió la carpeta que contiene el index.htlm y las tiles.
+3. Se esperó a que se terminara de subir.
+4. Se obtuvo el link a la página web.
+
+---
+
+## 12. Link de la página
+
+Se adjunta el link de la página: https://proyecto3-sig-anthonymatthew.netlify.app/
