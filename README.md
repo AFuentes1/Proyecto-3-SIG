@@ -1,9 +1,10 @@
 # Proyecto-3-SIG
+
 # Proyecto 3 – Mapa cantonal en TileMill
 
 ## Cantón e integrantes
 
-- **Cantón asignado:** Pérez Zeledón  
+- **Cantón asignado:** Pérez Zeledón
 - **Integrantes:**
   - Anthony Fuentes
   - Matthew Cordero
@@ -27,8 +28,8 @@ Desde la carpeta **Geo_CR** se cargaron las capas vectoriales originales para Co
 - `geo_provincias.shp`
 - `geo_cantones.shp`
 - `geo_distritos.shp`
-- `geo_carreter.shp` 
-- `geo_rios.shp` 
+- `geo_carreter.shp`
+- `geo_rios.shp`
 - `geo_poblados.shp`
 - `escuelasdiurnas2008.shp`
 - `hospitales2008crtm05.shp`
@@ -59,16 +60,16 @@ Usando **Vectorial → Herramientas de geoprocesamiento → Recortar (Clip)**, c
 
 Se generaron las siguientes capas recortadas (todas en `Proyecto-3-SIG/procesados/`):
 
-- `distritos_pz.shp`  ← recorte de `geo_distritos.shp`
+- `distritos_pz.shp` ← recorte de `geo_distritos.shp`
 - `carreteras_pz.shp` ← recorte de `geo_carreter.shp`
-- `rios_pz.shp`       ← recorte de `geo_rios.shp`
-- `poblados_pz.shp`   ← recorte de `geo_poblados.shp`
-- `escuelas_pz.shp`   ← recorte de `escuelasdiurnas2008.shp`
+- `rios_pz.shp` ← recorte de `geo_rios.shp`
+- `poblados_pz.shp` ← recorte de `geo_poblados.shp`
+- `escuelas_pz.shp` ← recorte de `escuelasdiurnas2008.shp`
 - `hospitales_pz.shp` ← recorte de `hospitales2008crtm05.shp`
-- `clinicas_pz.shp`   ← recorte de `clinicas2008crtm05.shp`
+- `clinicas_pz.shp` ← recorte de `clinicas2008crtm05.shp`
 - `gasolineras_pz.shp`← recorte de `gasolineras2008crtm05.shp`
-- `hoteles_pz.shp`    ← recorte de `hoteles2008crtm05.shp`
-- `bancos_pz.shp`     ← recorte de `agenbancos2008crtm05.shp`
+- `hoteles_pz.shp` ← recorte de `hoteles2008crtm05.shp`
+- `bancos_pz.shp` ← recorte de `agenbancos2008crtm05.shp`
 
 Estas capas representan únicamente la información contenida dentro del cantón Pérez Zeledón.
 
@@ -109,3 +110,17 @@ Con la capa `dem_cr`:
 
 ---
 
+## 7. Generación del mapa de sombras (Hillshade)
+
+Con la capa `dem_cr`:
+
+1. Se utilizó **Ráster → Análisis del terreno → Mapa de Sombras (Hillshade)**.
+2. Parámetros principales:
+   - **Capa de entrada:** `dem_cr`
+   - **Factor Z:** `1.0`
+   - **Escala:** `1.0`
+   - **Azimut de la luz:** `315°`
+   - **Altitud de la luz:** `45°`
+   - Resto de parámetros por defecto.
+3. **Archivo de salida:** `Proyecto-3-SIG/raster/hillshade_cr.tif`
+4. Se cargó la capa **`hillshade_cr`**, que se está utilizando como fondo de relieve detrás del cantón Pérez Zeledón.
